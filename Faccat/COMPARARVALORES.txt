@@ -1,0 +1,27 @@
+// Algoritmo "CompararValores"
+// Disciplina   : Linguagem e Lógica de Programação
+// Professor    : Obama
+// Descrição    : Comparar dois valores e escrever a mensagem apropriada
+// Autor(a)     : Jenifer Souza Pimentel Pais
+// Data atual   : 22/10/2024
+
+Var
+   valor1, valor2: real
+
+Inicio
+    // Entrada de dados
+    Escreva("Informe o primeiro valor: ")
+    Leia(valor1)
+
+    Escreva("Informe o segundo valor: ")
+    Leia(valor2)
+
+    // Comparação dos valores
+    Se valor1 = valor2 entao
+        Escreva("Números iguais")
+    SenaoSe valor1 > valor2 entao
+        Escreva("Primeiro é maior")
+    Senao
+        Escreva("Segundo maior")
+    FimSe
+Fimalgoritmo

@@ -1,0 +1,34 @@
+Algoritmo "SaldoCliente"
+// Disciplina   : Linguagem e Lógica de Programação
+// Professor    : Obama
+// Descrição    : Calcular o saldo atual de um cliente, considerando débito e crédito.
+// Autor(a)     : Jenifer Souza Pimentel Pais
+// Data atual   : 22/10/2024
+
+Var
+   conta: inteiro
+   saldo, debito, credito, saldoAtual: real
+
+Inicio
+   Escreva("Digite o número da conta: ")
+   Leia(conta)
+
+   Escreva("Digite o saldo atual: ")
+   Leia(saldo)
+
+   Escreva("Digite o valor do débito: ")
+   Leia(debito)
+
+   Escreva("Digite o valor do crédito: ")
+   Leia(credito)
+
+   saldoAtual := saldo - debito + credito
+
+   Escreva("O saldo atual é: ", saldoAtual)
+
+   Se saldoAtual >= 0 Entao
+      Escreva("Saldo Positivo")
+   Senao
+      Escreva("Saldo Negativo")
+   FimSe
+Fimalgoritmo

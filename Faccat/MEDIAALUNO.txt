@@ -1,0 +1,25 @@
+Algoritmo "MediaAluno"
+// Disciplina   : Linguagem e Lógica de Programação
+// Professor    : Obama
+// Descrição    : Calcular a média de duas notas e informar se o aluno foi aprovado.
+// Autor(a)     : Jenifer Souza Pimentel Pais
+// Data atual   : 22/10/2024
+
+Var
+   nota1, nota2, media: real
+
+Inicio
+   Escreva("Digite a 1ª nota: ")
+   Leia(nota1)
+
+   Escreva("Digite a 2ª nota: ")
+   Leia(nota2)
+
+   media := (nota1 + nota2) / 2
+
+   Se media >= 6 Entao
+      Escreva("Aluno aprovado! Média: ", media)
+   Senao
+      Escreva("Aluno reprovado! Média: ", media)
+   FimSe
+Fimalgoritmo

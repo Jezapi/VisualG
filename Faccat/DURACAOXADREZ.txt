@@ -1,0 +1,25 @@
+Algoritmo "DuracaoXadrez"
+// Disciplina   : Linguagem e Lógica de Programação
+// Professor    : Obama
+// Descrição    : Calcular a duração de um jogo de Xadrez baseado na hora de início e de fim.
+// Autor(a)     : Jenifer Souza Pimentel Pais
+// Data atual   : 22/10/2024
+
+Var
+   inicio, fim, duracao: inteiro
+
+Inicio
+   Escreva("Digite a hora de início do jogo (0-23): ")
+   Leia(inicio)
+
+   Escreva("Digite a hora de fim do jogo (0-23): ")
+   Leia(fim)
+
+   Se fim > inicio Entao
+      duracao := fim - inicio
+   Senao
+      duracao := (24 - inicio) + fim
+   FimSe
+
+   Escreva("A duração do jogo foi de: ", duracao, " horas.")
+Fimalgoritmo

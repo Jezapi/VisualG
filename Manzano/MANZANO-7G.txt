@@ -1,0 +1,33 @@
+// Algoritmo "SomaEMultiplicacaoNumeros"
+// Disciplina   : Linguagem e Lógica de Programação
+// Professor    : Obama
+// Descrição    : Ler quatro números inteiros e apresentar a soma e a multiplicação com base na propriedade distributiva.
+// Autor(a)     : Jenifer Souza Pimentel Pais
+// Data atual   : 22/10/2024
+
+Algoritmo "SomaEMultiplicacaoNumeros"
+   // Declaração de variáveis
+   Declare A, B, C, D: Inteiro
+   // Entrada de dados
+   Escreva "Digite o valor de A:"
+   Leia A
+   Escreva "Digite o valor de B:"
+   Leia B
+   Escreva "Digite o valor de C:"
+   Leia C
+   Escreva "Digite o valor de D:"
+   Leia D
+   // Cálculos de adição e multiplicação
+   Escreva "Soma A + B: ", A + B
+   Escreva "Soma A + C: ", A + C
+   Escreva "Soma A + D: ", A + D
+   Escreva "Soma B + C: ", B + C
+   Escreva "Soma B + D: ", B + D
+   Escreva "Soma C + D: ", C + D
+   Escreva "Multiplicação A * B: ", A * B
+   Escreva "Multiplicação A * C: ", A * C
+   Escreva "Multiplicação A * D: ", A * D
+   Escreva "Multiplicação B * C: ", B * C
+   Escreva "Multiplicação B * D: ", B * D
+   Escreva "Multiplicação C * D: ", C * D
+FimAlgoritmo

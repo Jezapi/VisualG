@@ -1,0 +1,24 @@
+// Algoritmo "QuadradoDaSoma"
+// Disciplina   : Linguagem e Lógica de Programação
+// Professor    : Obama
+// Descrição    : Quadrado da soma de três valores lidos.
+// Autor(a)     : Jenifer Souza Pimentel Pais
+// Data atual   : 22/10/2024
+
+Algoritmo "QuadradoDaSoma"
+   // Declaração de variáveis
+   Declare A, B, C, Soma, Resultado: Real
+   // Entrada de dados
+   Escreva "Digite o primeiro valor (A):"
+   Leia A
+   Escreva "Digite o segundo valor (B):"
+   Leia B
+   Escreva "Digite o terceiro valor (C):"
+   Leia C
+   // Cálculo da soma
+   Soma ? A + B + C
+   // Cálculo do quadrado da soma
+   Resultado ? Soma * Soma
+   // Saída de dados
+   Escreva "O quadrado da soma dos valores é: ", Resultado
+FimAlgoritmo

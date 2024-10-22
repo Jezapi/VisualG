@@ -1,0 +1,23 @@
+Algoritmo "OrdemCrescente"
+// Disciplina   : Linguagem e Lógica de Programação
+// Professor    : Obama
+// Descrição    : Ler dois valores e escrevê-los em ordem crescente.
+// Autor(a)     : Jenifer Souza Pimentel Pais
+// Data atual   : 22/10/2024
+
+Var
+   valor1, valor2: real
+
+Inicio
+   Escreva("Digite o primeiro valor: ")
+   Leia(valor1)
+
+   Escreva("Digite o segundo valor: ")
+   Leia(valor2)
+
+   Se valor1 < valor2 Entao
+      Escreva(valor1, " , ", valor2)
+   Senao
+      Escreva(valor2, " , ", valor1)
+   FimSe
+Fimalgoritmo

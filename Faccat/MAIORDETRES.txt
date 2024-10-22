@@ -1,0 +1,30 @@
+// Algoritmo "MaiorDeTres"
+// Disciplina   : Linguagem e Lógica de Programação
+// Professor    : Obama
+// Descrição    : Encontrar o maior entre três valores
+// Autor(a)     : Jenifer Souza Pimentel Pais
+// Data atual   : 22/10/2024
+
+Var
+   valor1, valor2, valor3: real
+
+Inicio
+    // Entrada de dados
+    Escreva("Informe o primeiro valor: ")
+    Leia(valor1)
+
+    Escreva("Informe o segundo valor: ")
+    Leia(valor2)
+
+    Escreva("Informe o terceiro valor: ")
+    Leia(valor3)
+
+    // Verificação do maior valor
+    Se valor1 > valor2 e valor1 > valor3 entao
+        Escreva("Maior valor: ", valor1)
+    SenaoSe valor2 > valor1 e valor2 > valor3 entao
+        Escreva("Maior valor: ", valor2)
+    Senao
+        Escreva("Maior valor: ", valor3)
+    FimSe
+Fimalgoritmo

@@ -1,0 +1,34 @@
+// Algoritmo "CalcularZ"
+// Disciplina   : Linguagem e Lógica de Programação
+// Professor    : Obama
+// Descrição    : Calcular z e determinar a resposta com base em z
+// Autor(a)     : Jenifer Souza Pimentel Pais
+// Data atual   : 22/10/2024
+
+Var
+   x, y, z: real
+   resposta: caractere
+
+Inicio
+    // Entrada de dados
+    Escreva("Informe o valor de x: ")
+    Leia(x)
+
+    Escreva("Informe o valor de y: ")
+    Leia(y)
+
+    z := (x * y) + 5
+
+    // Verificação da resposta
+    Se z <= 0 entao
+        resposta := 'A'
+    Senao
+        Se z <= 100 entao
+            resposta := 'B'
+        Senao
+            resposta := 'C'
+        FimSe
+    FimSe
+
+    Escreva("Z: ", z, " Resposta: ", resposta)
+Fimalgoritmo

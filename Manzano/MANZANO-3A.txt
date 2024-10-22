@@ -1,0 +1,28 @@
+// Algoritmo "ProdutoESoma"
+// Disciplina   : Linguagem e Lógica de Programação
+// Professor    : Obama
+// Descrição    : Ler quatro valores inteiros e calcular o produto e a soma especificados.
+// Autor(a)     : Jenifer Souza Pimentel Pais
+// Data atual   : 22/10/2024
+
+Algoritmo "ProdutoESoma"
+   // Declaração de variáveis
+   Declare A, B, C, D, P1, P2, S: Inteiro
+   // Entrada de dados
+   Escreva "Digite o primeiro valor (A):"
+   Leia A
+   Escreva "Digite o segundo valor (B):"
+   Leia B
+   Escreva "Digite o terceiro valor (C):"
+   Leia C
+   Escreva "Digite o quarto valor (D):"
+   Leia D
+   // Cálculo dos produtos e soma
+   P1 ? A * C
+   P2 ? A * C
+   S ? B + D
+   // Saída de dados
+   Escreva "O produto do primeiro com o terceiro valor é: ", P1
+   Escreva "O produto do primeiro com o terceiro valor é: ", P2
+   Escreva "A soma do segundo com o quarto valor é: ", S
+FimAlgoritmo

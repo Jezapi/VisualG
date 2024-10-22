@@ -1,0 +1,18 @@
+// Algoritmo "ConverterFahrenheitParaCelsius"
+// Disciplina   : Linguagem e Lógica de Programação
+// Professor    : Obama
+// Descrição    : Ler uma temperatura em graus Fahrenheit e apresentá-la convertida em graus Celsius.
+// Autor(a)     : Jenifer Souza Pimentel Pais
+// Data atual   : 22/10/2024
+
+Algoritmo "ConverterFahrenheitParaCelsius"
+   // Declaração de variáveis
+   Declare F, C: Real
+   // Entrada de dados
+   Escreva "Digite a temperatura em graus Fahrenheit:"
+   Leia F
+   // Cálculo da conversão
+   C ? (F - 32) * (5 / 9)
+   // Saída de dados
+   Escreva "A temperatura em graus Celsius é: ", C
+FimAlgoritmo

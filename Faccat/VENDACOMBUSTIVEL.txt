@@ -1,0 +1,44 @@
+// Algoritmo "VendaCombustivel"
+// Disciplina   : Linguagem e Lógica de Programação
+// Professor    : Obama
+// Descrição    : Calcular o valor a ser pago pelo cliente de acordo com o tipo de combustível e litros vendidos
+// Autor(a)     : Jenifer Souza Pimentel Pais
+// Data atual   : 22/10/2024
+
+Var
+   litros: real
+   tipoCombustivel: caractere
+   precoPorLitro, valorTotal: real
+
+Inicio
+    // Entrada de dados
+    Escreva("Informe a quantidade de litros vendidos: ")
+    Leia(litros)
+
+    Escreva("Informe o tipo de combustível (A para álcool e G para gasolina): ")
+    Leia(tipoCombustivel)
+
+    // Definindo o preço por litro e cálculo do valor total
+    Se tipoCombustivel = 'A' entao
+        precoPorLitro := 2.90
+        Se litros <= 20 entao
+            valorTotal := litros * precoPorLitro * 0.97 // 3% desconto
+        Senao
+            valorTotal := litros * precoPorLitro * 0.95 // 5% desconto
+        FimSe
+    Senao
+        precoPorLitro := 3.30
+        Se litros <= 20 entao
+            valorTotal := litros * precoPorLitro * 0.96 // 4% desconto
+        Senao
+            valorTotal := litros * precoPorLitro * 0.94 // 6% desconto
+        FimSe
+    FimSe
+
+    // Verificando se dá desconto adicional
+    Se litros > 8 ou valorTotal > 25.00 entao
+        valorTotal := valorTotal * 0.90 // 10% desconto
+    FimSe
+
+    Escreva("Valor a ser pago: R$ ", valorTotal:0:2)
+Fimalgoritmo

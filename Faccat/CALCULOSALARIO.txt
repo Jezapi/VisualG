@@ -1,0 +1,26 @@
+Algoritmo "CalculoSalario"
+// Disciplina   : Linguagem e Lógica de Programação
+// Professor    : Obama
+// Descrição    : Calcular o salário total de um funcionário com horas extras.
+// Autor(a)     : Jenifer Souza Pimentel Pais
+// Data atual   : 22/10/2024
+
+Var
+   horasTrabalhadas, salarioHora, salarioTotal, horasExtras: real
+
+Inicio
+   Escreva("Digite o número de horas trabalhadas no mês: ")
+   Leia(horasTrabalhadas)
+
+   Escreva("Digite o valor do salário por hora: ")
+   Leia(salarioHora)
+
+   Se horasTrabalhadas > 160 Entao
+      horasExtras := horasTrabalhadas - 160
+      salarioTotal := (160 * salarioHora) + (horasExtras * salarioHora * 1.5)
+   Senao
+      salarioTotal := horasTrabalhadas * salarioHora
+   FimSe
+
+   Escreva("O salário total é: R$ ", salarioTotal)
+Fimalgoritmo

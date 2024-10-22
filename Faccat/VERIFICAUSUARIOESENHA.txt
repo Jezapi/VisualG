@@ -1,0 +1,29 @@
+// Algoritmo "VerificaUsuarioESenha"
+// Disciplina   : Linguagem e Lógica de Programação
+// Professor    : Obama
+// Descrição    : Verifica código de usuário e senha
+// Autor(a)     : Jenifer Souza Pimentel Pais
+// Data atual   : 22/10/2024
+
+Var
+   codigo, senha: inteiro
+
+Inicio
+    // Leitura do código de usuário
+    Escreva("Informe o código de usuário: ")
+    Leia(codigo)
+
+    Se codigo <> 1234 entao
+        Escreva("Usuário inválido!")
+    Senao
+        // Leitura da senha
+        Escreva("Informe a senha: ")
+        Leia(senha)
+
+        Se senha <> 9999 entao
+            Escreva("Senha incorreta")
+        Senao
+            Escreva("Acesso permitido")
+        FimSe
+    FimSe
+Fimalgoritmo

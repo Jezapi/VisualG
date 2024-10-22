@@ -1,0 +1,20 @@
+// Algoritmo "ConverterRealParaDolar"
+// Disciplina   : Linguagem e Lógica de Programação
+// Professor    : Obama
+// Descrição    : Conversão de um valor em real para dólar.
+// Autor(a)     : Jenifer Souza Pimentel Pais
+// Data atual   : 22/10/2024
+
+Algoritmo "ConverterRealParaDolar"
+   // Declaração de variáveis
+   Declare Reais, CotacaoDolar, ValorEmDolares: Real
+   // Entrada de dados
+   Escreva "Digite a cotação do dólar:"
+   Leia CotacaoDolar
+   Escreva "Digite a quantidade de reais:"
+   Leia Reais
+   // Cálculo da conversão
+   ValorEmDolares ? Reais / CotacaoDolar
+   // Saída de dados
+   Escreva "O valor em dólares é: ", ValorEmDolares
+FimAlgoritmo

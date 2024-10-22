@@ -1,0 +1,47 @@
+// Algoritmo "MediaAproveitamento"
+// Disciplina   : Linguagem e Lógica de Programação
+// Professor    : Obama
+// Descrição    : Calcular a média de aproveitamento e conceito de um aluno
+// Autor(a)     : Jenifer Souza Pimentel Pais
+// Data atual   : 22/10/2024
+
+Var
+   N1, N2, N3, mediaExercicios, mediaAproveitamento: real
+   conceito: caractere
+
+Inicio
+    // Leitura das notas
+    Escreva("Informe a nota 1: ")
+    Leia(N1)
+
+    Escreva("Informe a nota 2: ")
+    Leia(N2)
+
+    Escreva("Informe a nota 3: ")
+    Leia(N3)
+
+    Escreva("Informe a média dos exercícios: ")
+    Leia(mediaExercicios)
+
+    // Cálculo da média de aproveitamento
+    mediaAproveitamento := (N1 + (N2 * 2) + (N3 * 3) + mediaExercicios) / 7
+
+    // Determinação do conceito
+    Se mediaAproveitamento >= 9.0 entao
+        conceito := 'A'
+    Senao
+        Se mediaAproveitamento >= 7.5 entao
+            conceito := 'B'
+        Senao
+            Se mediaAproveitamento >= 6.0 entao
+                conceito := 'C'
+            Senao
+                conceito := 'D'
+            FimSe
+        FimSe
+    FimSe
+
+    // Resultado
+    Escreva("Média de Aproveitamento: ", mediaAproveitamento:0:2)
+    Escreva("Conceito: ", conceito)
+Fimalgoritmo

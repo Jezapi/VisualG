@@ -1,0 +1,36 @@
+// Algoritmo "VencedorOuEmpate"
+// Disciplina   : Linguagem e Lógica de Programação
+// Professor    : Obama
+// Descrição    : Determinar o vencedor de uma partida ou empate
+// Autor(a)     : Jenifer Souza Pimentel Pais
+// Data atual   : 22/10/2024
+
+Var
+   time1, time2: caractere
+   golsTime1, golsTime2: inteiro
+
+Inicio
+    // Entrada de dados
+    Escreva("Informe o nome do primeiro time: ")
+    Leia(time1)
+
+    Escreva("Informe o nome do segundo time: ")
+    Leia(time2)
+
+    Escreva("Informe o número de gols do ", time1, ": ")
+    Leia(golsTime1)
+
+    Escreva("Informe o número de gols do ", time2, ": ")
+    Leia(golsTime2)
+
+    // Verificação do vencedor ou empate
+    Se golsTime1 > golsTime2 entao
+        Escreva("O vencedor é: ", time1)
+    SenaoSe golsTime2 > golsTime1 entao
+        Escreva("O vencedor é: ", time2)
+    Senao
+        Escreva("EMPATE")
+    FimSe
+Fimalgoritmo
+
+Fimalgoritmo

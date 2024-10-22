@@ -1,0 +1,22 @@
+// Algoritmo "CalcularPrestacaoAtrasada"
+// Disciplina   : Linguagem e Lógica de Programação
+// Professor    : Obama
+// Descrição    : Calcular e apresentar o valor de uma prestação em atraso.
+// Autor(a)     : Jenifer Souza Pimentel Pais
+// Data atual   : 22/10/2024
+
+Algoritmo "CalcularPrestacaoAtrasada"
+   // Declaração de variáveis
+   Declare VALOR, TAXA, TEMPO, PRESTACAO: Real
+   // Entrada de dados
+   Escreva "Digite o valor da prestação:"
+   Leia VALOR
+   Escreva "Digite a taxa de juros (%):"
+   Leia TAXA
+   Escreva "Digite o tempo em meses:"
+   Leia TEMPO
+   // Cálculo da prestação
+   PRESTACAO ? VALOR + (VALOR * TAXA / 100) * TEMPO
+   // Saída de dados
+   Escreva "O valor da prestação em atraso é: ", PRESTACAO
+FimAlgoritmo

@@ -1,0 +1,37 @@
+// Algoritmo "VerificaAposentadoria"
+// Disciplina   : Linguagem e Lógica de Programação
+// Professor    : Obama
+// Descrição    : Verifica se um empregado pode requerer aposentadoria
+// Autor(a)     : Jenifer Souza Pimentel Pais
+// Data atual   : 22/10/2024
+
+Var
+   codigo: inteiro
+   anoNascimento, anoIngresso, idade, tempoTrabalho: inteiro
+
+Inicio
+    // Leitura dos dados
+    Escreva("Informe o número do empregado: ")
+    Leia(codigo)
+
+    Escreva("Informe o ano de nascimento: ")
+    Leia(anoNascimento)
+
+    Escreva("Informe o ano de ingresso na empresa: ")
+    Leia(anoIngresso)
+
+    // Cálculo da idade e tempo de trabalho
+    idade := 2024 - anoNascimento
+    tempoTrabalho := 2024 - anoIngresso
+
+    // Verificação dos requisitos para aposentadoria
+    Se (idade >= 65) ou (tempoTrabalho >= 30) ou (idade >= 60 e tempoTrabalho >= 25) entao
+        Escreva("Idade: ", idade, " anos")
+        Escreva("Tempo de trabalho: ", tempoTrabalho, " anos")
+        Escreva("Requerer aposentadoria")
+    Senao
+        Escreva("Idade: ", idade, " anos")
+        Escreva("Tempo de trabalho: ", tempoTrabalho, " anos")
+        Escreva("Não requerer")
+    FimSe
+Fimalgoritmo

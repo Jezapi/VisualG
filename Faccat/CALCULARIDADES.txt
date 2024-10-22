@@ -1,0 +1,39 @@
+// Algoritmo "CalcularIdades"
+// Disciplina   : Linguagem e Lógica de Programação
+// Professor    : Obama
+// Descrição    : Calcular a soma e o produto das idades dos homens e mulheres
+// Autor(a)     : Jenifer Souza Pimentel Pais
+// Data atual   : 22/10/2024
+
+Var
+   idadeHomem1, idadeHomem2: inteiro
+   idadeMulher1, idadeMulher2: inteiro
+   soma: inteiro
+   produto: inteiro
+
+Inicio
+    // Entrada de dados
+    Escreva("Informe a idade do primeiro homem: ")
+    Leia(idadeHomem1)
+
+    Escreva("Informe a idade do segundo homem: ")
+    Leia(idadeHomem2)
+
+    Escreva("Informe a idade da primeira mulher: ")
+    Leia(idadeMulher1)
+
+    Escreva("Informe a idade da segunda mulher: ")
+    Leia(idadeMulher2)
+
+    // Cálculo da soma e do produto
+    Se idadeHomem1 > idadeHomem2 entao
+        soma := idadeHomem1 + idadeMulher2
+        produto := idadeHomem2 * idadeMulher1
+    Senao
+        soma := idadeHomem2 + idadeMulher2
+        produto := idadeHomem1 * idadeMulher1
+    FimSe
+
+    Escreva("Soma das idades: ", soma)
+    Escreva("Produto das idades: ", produto)
+Fimalgoritmo

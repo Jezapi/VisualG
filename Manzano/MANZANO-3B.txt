@@ -1,0 +1,20 @@
+// Algoritmo "CalcularNovoSalario"
+// Disciplina   : Linguagem e Lógica de Programação
+// Professor    : Obama
+// Descrição    : Ler salário mensal e percentual de reajuste, e calcular o novo salário.
+// Autor(a)     : Jenifer Souza Pimentel Pais
+// Data atual   : 22/10/2024
+
+Algoritmo "CalcularNovoSalario"
+   // Declaração de variáveis
+   Declare SM, PR, NS: Real
+   // Entrada de dados
+   Escreva "Digite o salário mensal (SM):"
+   Leia SM
+   Escreva "Digite o percentual de reajuste (PR):"
+   Leia PR
+   // Cálculo do novo salário
+   NS ? SM + (SM * PR / 100)
+   // Saída de dados
+   Escreva "O novo salário é: ", NS
+FimAlgoritmo

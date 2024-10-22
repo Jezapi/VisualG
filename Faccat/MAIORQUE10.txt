@@ -1,0 +1,20 @@
+Algoritmo "MaiorQue10"
+// Disciplina   : Linguagem e Lógica de Programação
+// Professor    : Obama
+// Descrição    : Ler um valor e escrever se é maior que 10.
+// Autor(a)     : Jenifer Souza Pimentel Pais
+// Data atual   : 22/10/2024
+
+Var
+   valor: inteiro
+
+Inicio
+   Escreva("Digite um valor: ")
+   Leia(valor)
+
+   Se valor > 10 Entao
+      Escreva("É MAIOR QUE 10!")
+   Senao
+      Escreva("NÃO É MAIOR QUE 10!")
+   FimSe
+Fimalgoritmo

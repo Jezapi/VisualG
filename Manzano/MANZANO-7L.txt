@@ -1,0 +1,22 @@
+// Algoritmo "SomaDosQuadrados"
+// Disciplina   : Linguagem e Lógica de Programação
+// Professor    : Obama
+// Descrição    : Soma dos quadrados de três valores lidos.
+// Autor(a)     : Jenifer Souza Pimentel Pais
+// Data atual   : 22/10/2024
+
+Algoritmo "SomaDosQuadrados"
+   // Declaração de variáveis
+   Declare A, B, C, Soma: Real
+   // Entrada de dados
+   Escreva "Digite o primeiro valor (A):"
+   Leia A
+   Escreva "Digite o segundo valor (B):"
+   Leia B
+   Escreva "Digite o terceiro valor (C):"
+   Leia C
+   // Cálculo da soma dos quadrados
+   Soma ? (A * A) + (B * B) + (C * C)
+   // Saída de dados
+   Escreva "A soma dos quadrados dos valores é: ", Soma
+FimAlgoritmo

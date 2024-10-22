@@ -1,0 +1,43 @@
+// Algoritmo "OrdenarValores"
+// Disciplina   : Linguagem e Lógica de Programação
+// Professor    : Obama
+// Descrição    : Ordenar três valores em ordem crescente
+// Autor(a)     : Jenifer Souza Pimentel Pais
+// Data atual   : 22/10/2024
+
+Var
+   valor1, valor2, valor3, aux: real
+
+Inicio
+    // Entrada de dados
+    Escreva("Informe o primeiro valor: ")
+    Leia(valor1)
+
+    Escreva("Informe o segundo valor: ")
+    Leia(valor2)
+
+    Escreva("Informe o terceiro valor: ")
+    Leia(valor3)
+
+    // Ordenação dos valores em ordem crescente
+    Se valor1 > valor2 entao
+        aux <- valor1
+        valor1 <- valor2
+        valor2 <- aux
+    FimSe
+
+    Se valor1 > valor3 entao
+        aux <- valor1
+        valor1 <- valor3
+        valor3 <- aux
+    FimSe
+
+    Se valor2 > valor3 entao
+        aux <- valor2
+        valor2 <- valor3
+        valor3 <- aux
+    FimSe
+
+    // Exibir os valores em ordem crescente
+    Escreva("Valores em ordem crescente: ", valor1, ", ", valor2, ", ", valor3)
+Fimalgoritmo

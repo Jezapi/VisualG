@@ -1,0 +1,20 @@
+// Algoritmo "CalcularVolumeLata"
+// Disciplina   : Linguagem e Lógica de Programação
+// Professor    : Obama
+// Descrição    : Calcular e apresentar o volume de uma lata de óleo.
+// Autor(a)     : Jenifer Souza Pimentel Pais
+// Data atual   : 22/10/2024
+
+Algoritmo "CalcularVolumeLata"
+   // Declaração de variáveis
+   Declare Raio, Altura, Volume: Real
+   // Entrada de dados
+   Escreva "Digite o raio da lata:"
+   Leia Raio
+   Escreva "Digite a altura da lata:"
+   Leia Altura
+   // Cálculo do volume
+   Volume ? 3.14 * (Raio * Raio) * Altura
+   // Saída de dados
+   Escreva "O volume da lata de óleo é: ", Volume
+FimAlgoritmo

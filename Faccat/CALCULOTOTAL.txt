@@ -1,0 +1,45 @@
+// Algoritmo "CalculoTotal"
+// Disciplina   : Linguagem e Lógica de Programação
+// Professor    : Obama
+// Descrição    : Calcular o total a pagar por um produto com desconto
+// Autor(a)     : Jenifer Souza Pimentel Pais
+// Data atual   : 22/10/2024
+
+Var
+   descricao: caractere
+   quantidade: inteiro
+   precoUnitario, total, desconto, totalAPagar: real
+
+Inicio
+    // Leitura dos dados
+    Escreva("Informe a descrição do produto: ")
+    Leia(descricao)
+
+    Escreva("Informe a quantidade adquirida: ")
+    Leia(quantidade)
+
+    Escreva("Informe o preço unitário: ")
+    Leia(precoUnitario)
+
+    // Cálculo do total
+    total := quantidade * precoUnitario
+
+    // Cálculo do desconto
+    Se quantidade <= 5 entao
+        desconto := total * 0.02
+    Senao
+        Se quantidade <= 10 entao
+            desconto := total * 0.03
+        Senao
+            desconto := total * 0.05
+        FimSe
+    FimSe
+
+    // Cálculo do total a pagar
+    totalAPagar := total - desconto
+
+    // Resultado
+    Escreva("Total: R$ ", total:0:2)
+    Escreva("Desconto: R$ ", desconto:0:2)
+    Escreva("Total a pagar: R$ ", totalAPagar:0:2)
+Fimalgoritmo

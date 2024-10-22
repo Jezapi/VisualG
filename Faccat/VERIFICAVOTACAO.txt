@@ -1,0 +1,25 @@
+Algoritmo "VerificaVotacao"
+// Disciplina   : Linguagem e Lógica de Programação
+// Professor    : Obama
+// Descrição    : Verificar se uma pessoa pode votar baseado no ano de nascimento.
+// Autor(a)     : Jenifer Souza Pimentel Pais
+// Data atual   : 22/10/2024
+
+Var
+   anoAtual, anoNascimento, idade: inteiro
+
+Inicio
+   Escreva("Digite o ano atual: ")
+   Leia(anoAtual)
+
+   Escreva("Digite o ano de nascimento: ")
+   Leia(anoNascimento)
+
+   idade := anoAtual - anoNascimento
+
+   Se idade >= 16 Entao
+      Escreva("Você pode votar este ano.")
+   Senao
+      Escreva("Você não pode votar este ano.")
+   FimSe
+Fimalgoritmo

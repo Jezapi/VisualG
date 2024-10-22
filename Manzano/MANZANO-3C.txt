@@ -1,0 +1,41 @@
+// Algoritmo "ApuracaoVotos"
+// Disciplina   : Linguagem e Lógica de Programação
+// Professor    : Obama
+// Descrição    : Ler votos válidos, nulos e em branco, e calcular percentuais.
+// Autor(a)     : Jenifer Souza Pimentel Pais
+// Data atual   : 22/10/2024
+
+Algoritmo "ApuracaoVotos"
+   // Declaração de variáveis
+   Declare A, B, C, Nulos, Brancos, TotalEleitores: Inteiro
+   Declare PercentualValidos, PercentualA, PercentualB, PercentualC: Real
+   Declare PercentualNulos, PercentualBrancos: Real
+   // Entrada de dados
+   Escreva "Digite a quantidade de votos válidos para o candidato A:"
+   Leia A
+   Escreva "Digite a quantidade de votos válidos para o candidato B:"
+   Leia B
+   Escreva "Digite a quantidade de votos válidos para o candidato C:"
+   Leia C
+   Escreva "Digite a quantidade de votos nulos:"
+   Leia Nulos
+   Escreva "Digite a quantidade de votos em branco:"
+   Leia Brancos
+   // Cálculo do total de eleitores
+   TotalEleitores ? A + B + C + Nulos + Brancos
+   // Cálculo dos percentuais
+   PercentualValidos ? (A + B + C) * 100 / TotalEleitores
+   PercentualA ? A * 100 / TotalEleitores
+   PercentualB ? B * 100 / TotalEleitores
+   PercentualC ? C * 100 / TotalEleitores
+   PercentualNulos ? Nulos * 100 / TotalEleitores
+   PercentualBrancos ? Brancos * 100 / TotalEleitores
+   // Saída de dados
+   Escreva "Total de eleitores: ", TotalEleitores
+   Escreva "Percentual de votos válidos: ", PercentualValidos
+   Escreva "Percentual de votos válidos do candidato A: ", PercentualA
+   Escreva "Percentual de votos válidos do candidato B: ", PercentualB
+   Escreva "Percentual de votos válidos do candidato C: ", PercentualC
+   Escreva "Percentual de votos nulos: ", PercentualNulos
+   Escreva "Percentual de votos em branco: ", PercentualBrancos
+FimAlgoritmo

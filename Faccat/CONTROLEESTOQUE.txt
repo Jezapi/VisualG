@@ -1,0 +1,31 @@
+// Algoritmo "ControleEstoque"
+// Disciplina   : Linguagem e Lógica de Programação
+// Professor    : Obama
+// Descrição    : Verificar se é necessário efetuar compra de produtos no estoque
+// Autor(a)     : Jenifer Souza Pimentel Pais
+// Data atual   : 22/10/2024
+
+Var
+   quantidade_atual, quantidade_maxima, quantidade_minima, quantidade_media: real
+
+Inicio
+    // Entrada de dados
+    Escreva("Informe a quantidade atual: ")
+    Leia(quantidade_atual)
+
+    Escreva("Informe a quantidade máxima: ")
+    Leia(quantidade_maxima)
+
+    Escreva("Informe a quantidade mínima: ")
+    Leia(quantidade_minima)
+
+    // Cálculo da quantidade média
+    quantidade_media <- (quantidade_maxima + quantidade_minima) / 2
+
+    // Verificar se é necessário efetuar compra
+    Se quantidade_atual >= quantidade_media entao
+        Escreva("Não efetuar compra")
+    Senao
+        Escreva("Efetuar compra")
+    FimSe
+Fimalgoritmo

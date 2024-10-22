@@ -1,0 +1,20 @@
+// Algoritmo "QuadradoDaDiferenca"
+// Disciplina   : Linguagem e Lógica de Programação
+// Professor    : Obama
+// Descrição    : Ler dois inteiros e imprimir o resultado do quadrado da diferença do primeiro pelo segundo.
+// Autor(a)     : Jenifer Souza Pimentel Pais
+// Data atual   : 22/10/2024
+
+Algoritmo "QuadradoDaDiferenca"
+   // Declaração de variáveis
+   Declare A, B, Resultado: Inteiro
+   // Entrada de dados
+   Escreva "Digite o primeiro valor (A):"
+   Leia A
+   Escreva "Digite o segundo valor (B):"
+   Leia B
+   // Cálculo do quadrado da diferença
+   Resultado ? (A - B) * (A - B)
+   // Saída de dados
+   Escreva "O quadrado da diferença de A e B é: ", Resultado
+FimAlgoritmo

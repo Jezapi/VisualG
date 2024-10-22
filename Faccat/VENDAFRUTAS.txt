@@ -1,0 +1,42 @@
+// Algoritmo "VendaFrutas"
+// Disciplina   : Linguagem e Lógica de Programação
+// Professor    : Obama
+// Descrição    : Calcular o valor total da compra de frutas
+// Autor(a)     : Jenifer Souza Pimentel Pais
+// Data atual   : 22/10/2024
+
+Var
+   kgMorangos, kgMacas: real
+   precoMorangos, precoMacas, valorTotal: real
+
+Inicio
+    // Entrada de dados
+    Escreva("Informe a quantidade de morangos (em Kg): ")
+    Leia(kgMorangos)
+
+    Escreva("Informe a quantidade de maçãs (em Kg): ")
+    Leia(kgMacas)
+
+    // Definindo preços
+    Se kgMorangos <= 5 entao
+        precoMorangos := 2.50
+    Senao
+        precoMorangos := 2.20
+    FimSe
+
+    Se kgMacas <= 5 entao
+        precoMacas := 1.80
+    Senao
+        precoMacas := 1.50
+    FimSe
+
+    // Cálculo do valor total
+    valorTotal := (kgMorangos * precoMorangos) + (kgMacas * precoMacas)
+
+    // Verificando desconto adicional
+    Se (kgMorangos + kgMacas > 8) ou (valorTotal > 25.00) entao
+        valorTotal := valorTotal * 0.90 // 10% desconto
+    FimSe
+
+    Escreva("Valor a ser pago: R$ ", valorTotal:0:2)
+Fimalgoritmo

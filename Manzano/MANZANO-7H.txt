@@ -1,0 +1,22 @@
+// Algoritmo "CalcularVolumeCaixa"
+// Disciplina   : Linguagem e Lógica de Programação
+// Professor    : Obama
+// Descrição    : Calcular e apresentar o volume de uma caixa retangular.
+// Autor(a)     : Jenifer Souza Pimentel Pais
+// Data atual   : 22/10/2024
+
+Algoritmo "CalcularVolumeCaixa"
+   // Declaração de variáveis
+   Declare Comprimento, Largura, Altura, Volume: Real
+   // Entrada de dados
+   Escreva "Digite o comprimento da caixa:"
+   Leia Comprimento
+   Escreva "Digite a largura da caixa:"
+   Leia Largura
+   Escreva "Digite a altura da caixa:"
+   Leia Altura
+   // Cálculo do volume
+   Volume ? Comprimento * Largura * Altura
+   // Saída de dados
+   Escreva "O volume da caixa retangular é: ", Volume
+FimAlgoritmo

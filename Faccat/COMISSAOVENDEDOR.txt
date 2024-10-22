@@ -1,0 +1,25 @@
+Algoritmo "ComissaoVendedor"
+// Disciplina   : Linguagem e Lógica de Programação
+// Professor    : Obama
+// Descrição    : Calcular o salário total de um vendedor com base em suas vendas e comissões.
+// Autor(a)     : Jenifer Souza Pimentel Pais
+// Data atual   : 22/10/2024
+
+Var
+   salarioFixo, vendas, salarioTotal: real
+
+Inicio
+   Escreva("Digite o salário fixo: ")
+   Leia(salarioFixo)
+
+   Escreva("Digite o valor das vendas efetuadas: ")
+   Leia(vendas)
+
+   Se vendas <= 1500 Entao
+      salarioTotal := salarioFixo + (vendas * 0.03)
+   Senao
+      salarioTotal := salarioFixo + (1500 * 0.03) + ((vendas - 1500) * 0.05)
+   FimSe
+
+   Escreva("O salário total é: R$ ", salarioTotal)
+Fimalgoritmo

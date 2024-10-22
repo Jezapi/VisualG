@@ -1,0 +1,30 @@
+// Algoritmo "DivisaoValidaEnquanto"
+// Disciplina   : Linguagem e Lógica de Programação
+// Professor    : Obama
+// Descrição    : Ler dois valores e dividir, garantindo que o segundo não seja zero
+// Autor(a)     : Jenifer Souza Pimentel Pais
+// Data atual   : 22/10/2024
+
+Var
+   valor1, valor2, resultado: real
+
+Inicio
+    // Leitura do primeiro valor
+    Escreva("Informe o primeiro valor: ")
+    Leia(valor1)
+
+    // Leitura do segundo valor com validação
+    Escreva("Informe o segundo valor (não pode ser zero): ")
+    Leia(valor2)
+
+    Enquanto valor2 = 0 faca
+        Escreva("Valor inválido! Informe o segundo valor (não pode ser zero): ")
+        Leia(valor2)
+    FimEnquanto
+
+    // Cálculo da divisão
+    resultado := valor1 / valor2
+
+    // Resultado
+    Escreva("Resultado da divisão: ", resultado:0:2)
+Fimalgoritmo

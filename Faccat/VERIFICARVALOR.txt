@@ -1,0 +1,24 @@
+// Algoritmo "VerificarValor"
+// Disciplina   : Linguagem e Lógica de Programação
+// Professor    : Obama
+// Descrição    : Verificar se um valor é positivo, negativo ou zero
+// Autor(a)     : Jenifer Souza Pimentel Pais
+// Data atual   : 22/10/2024
+
+Var
+   valor: real
+
+Inicio
+    // Entrada de dados
+    Escreva("Informe um valor: ")
+    Leia(valor)
+
+    // Verificação do valor
+    Se valor > 0 entao
+        Escreva("Positivo")
+    SenaoSe valor < 0 entao
+        Escreva("Negativo")
+    Senao
+        Escreva("Zero")
+    FimSe
+Fimalgoritmo

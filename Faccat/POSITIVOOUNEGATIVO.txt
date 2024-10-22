@@ -1,0 +1,20 @@
+Algoritmo "PositivoOuNegativo"
+// Disciplina   : Linguagem e Lógica de Programação
+// Professor    : Obama
+// Descrição    : Ler um valor e verificar se é positivo ou negativo (considerar zero como positivo).
+// Autor(a)     : Jenifer Souza Pimentel Pais
+// Data atual   : 22/10/2024
+
+Var
+   valor: inteiro
+
+Inicio
+   Escreva("Digite um valor: ")
+   Leia(valor)
+
+   Se valor >= 0 Entao
+      Escreva("O valor é positivo.")
+   Senao
+      Escreva("O valor é negativo.")
+   FimSe
+Fimalgoritmo

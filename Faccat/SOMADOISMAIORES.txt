@@ -1,0 +1,45 @@
+// Algoritmo "SomaDoisMaiores"
+// Disciplina   : Linguagem e Lógica de Programação
+// Professor    : Obama
+// Descrição    : Calcular a soma dos dois maiores valores entre três
+// Autor(a)     : Jenifer Souza Pimentel Pais
+// Data atual   : 22/10/2024
+
+Var
+   valor1, valor2, valor3, soma: real
+
+Inicio
+    // Entrada de dados
+    Escreva("Informe o primeiro valor: ")
+    Leia(valor1)
+
+    Escreva("Informe o segundo valor: ")
+    Leia(valor2)
+
+    Escreva("Informe o terceiro valor: ")
+    Leia(valor3)
+
+    // Cálculo da soma dos dois maiores valores
+    Se (valor1 >= valor2) e (valor1 >= valor3) entao
+        Se valor2 >= valor3 entao
+            soma <- valor1 + valor2
+        Senao
+            soma <- valor1 + valor3
+        FimSe
+    SenaoSe (valor2 >= valor1) e (valor2 >= valor3) entao
+        Se valor1 >= valor3 entao
+            soma <- valor2 + valor1
+        Senao
+            soma <- valor2 + valor3
+        FimSe
+    Senao
+        Se valor1 >= valor2 entao
+            soma <- valor3 + valor1
+        Senao
+            soma <- valor3 + valor2
+        FimSe
+    FimSe
+
+    // Exibir a soma
+    Escreva("Soma dos dois maiores valores: ", soma)
+Fimalgoritmo

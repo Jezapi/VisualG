@@ -1,0 +1,28 @@
+// Algoritmo "Triangulo"
+// Disciplina   : Linguagem e Lógica de Programação
+// Professor    : Obama
+// Descrição    : Verificar se três lados formam um triângulo
+// Autor(a)     : Jenifer Souza Pimentel Pais
+// Data atual   : 22/10/2024
+
+Var
+   A, B, C: real
+
+Inicio
+    // Entrada de dados
+    Escreva("Informe o valor do lado A: ")
+    Leia(A)
+
+    Escreva("Informe o valor do lado B: ")
+    Leia(B)
+
+    Escreva("Informe o valor do lado C: ")
+    Leia(C)
+
+    // Verificação se formam um triângulo
+    Se (A < B + C) e (B < A + C) e (C < A + B) entao
+        Escreva("Os valores formam um triângulo.")
+    Senao
+        Escreva("Os valores não formam um triângulo.")
+    FimSe
+Fimalgoritmo

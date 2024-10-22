@@ -1,0 +1,24 @@
+// Algoritmo "CalcularLitrosViagem"
+// Disciplina   : Linguagem e Lógica de Programação
+// Professor    : Obama
+// Descrição    : Calcular e apresentar a quantidade de litros de combustível gasta em uma viagem.
+// Autor(a)     : Jenifer Souza Pimentel Pais
+// Data atual   : 22/10/2024
+
+Algoritmo "CalcularLitrosViagem"
+   // Declaração de variáveis
+   Declare TEMPO, VELOCIDADE, DISTANCIA, LITROS_USADOS: Real
+   // Entrada de dados
+   Escreva "Digite o tempo gasto na viagem (em horas):"
+   Leia TEMPO
+   Escreva "Digite a velocidade média durante a viagem (em km/h):"
+   Leia VELOCIDADE
+   // Cálculo da distância e litros usados
+   DISTANCIA ? TEMPO * VELOCIDADE
+   LITROS_USADOS ? DISTANCIA / 12
+   // Saída de dados
+   Escreva "Velocidade média: ", VELOCIDADE
+   Escreva "Tempo gasto na viagem: ", TEMPO
+   Escreva "Distância percorrida: ", DISTANCIA
+   Escreva "Quantidade de litros usados: ", LITROS_USADOS
+FimAlgoritmo
